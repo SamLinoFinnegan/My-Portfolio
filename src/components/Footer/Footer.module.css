@@ -1,0 +1,124 @@
+.footer {
+    width: 100%;
+    margin: auto;
+    background-color: rgb(31, 54, 102)
+  }
+  
+  .footer .footerContainer {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+            
+  }
+  
+  .footer .footerContainer p {
+    color: white;
+    
+  }
+  
+  .footer .footerContainer a {
+    padding: 10px;
+    width: 33.3vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    font-size: 20px;
+    border: 2px solid black;
+    box-shadow: 0 0 3px 2px white;
+    border-radius: 2%;
+  }
+  
+  .footer .footerContainer a .footerIcon {
+    color: white;
+    float: left;
+    margin-right: 20px;
+    padding: 10px;
+    align-self: center;
+  }
+   
+  .footer .footerContainer a:visited {
+    color: #b2c7dd;
+  }
+  
+  .footer .footerContainer a:hover {
+    -webkit-transition: 350ms;
+    transition: 350ms;
+    background-color: #1d40a0;
+    color: #f8ffdb;
+  }
+  
+  .footer .naw {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    margin: 0;
+  }
+  
+  .footer .naw .footerIcon {
+    vertical-align: middle;
+    margin-left: 5px;
+    margin-right: 4px;
+    color: #f8ffdb;
+  }
+  
+  @media only screen and (max-width: 600px){
+    .footer{
+      width: 100%;
+      margin: auto;
+    }
+    .footer .footerContainer {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly;
+              
+    }
+
+      .footer .footerContainer a {
+      padding: 5px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      text-decoration: none;
+      font-size: 15px;
+      border: 2px solid black;
+      box-shadow: 0 0 3px 2px white;
+      border-radius: 2%;
+    }
+    .footer .footerContainer a .footerIcon {
+      color: white;
+      padding: 10px;
+      align-self: center;
+
+    }
+    .footer .footerContainer p {
+      font-size: 1px;
+      visibility: hidden;
+      
+    }
+    .footer .naw {
+      width: 100%;
+      text-align: center;
+      padding: 0;
+      color: white;
+      margin: 0;
+    }
+    .footer .naw .footerIcon {
+      vertical-align: middle;
+      margin-left: 5px;
+      margin-right: 4px;
+      color: #f8ffdb;
+    }
+}

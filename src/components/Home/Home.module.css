@@ -1,0 +1,82 @@
+.home{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 58%, rgba(0,212,255,1) 100%);
+    display: flex;
+    height: 630px;
+    padding: 80px;
+    position: relative;
+   
+}
+.home .container {   
+    position: absolute;
+    top: 15%;
+    left: 2%;
+    color: white;
+    
+}
+
+.home .container {
+    animation: fadeIn linear 2s;   
+    
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    
+  }
+
+.home .container .hello{
+    font-size: 63px;
+}
+
+.home .container h1{
+    margin: 0;
+
+}
+.home .code{
+    position: absolute;
+    opacity: 0.7;
+    height: 43%;
+    bottom: 55%;
+    top: 45%;
+    left: 3%;
+    
+}
+.home .code img{
+    border-radius: 2%;
+}
+
+@media only screen and (max-width: 600px){
+    
+    .home{
+        width: 100%;    
+
+    }
+    
+    .home .code{
+        width: 70%;
+      
+    }
+
+    .home .code img{
+        width: 100%;
+    }
+
+    .home .container {
+        text-align: center;
+        width: 80%;
+        margin: auto;
+    }
+
+    .home .container h1{
+        
+        font-size: 35px;
+    }
+    .home .container h2{
+       
+        font-size: 28px;
+        
+    }
+}
+

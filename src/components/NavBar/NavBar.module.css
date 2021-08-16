@@ -1,0 +1,42 @@
+.navBar{
+    background-color: rgb(64, 104, 189);
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navBar nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navBar nav ul li{
+    display: inline-block;
+    margin: 20px;
+}
+
+.navBar nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+    
+}
+.navBar a:hover{
+    
+    color: rgb(36, 65, 129);
+}
+
+@media only screen and (max-width: 600px){
+    .navBar nav ul li{
+        font-size: 20px;
+    }
+    .navBar {
+        width: 100%;
+    }
+}

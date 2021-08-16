@@ -1,0 +1,79 @@
+.projects{
+    margin: 0;
+    padding: 0;
+    background-color: #c3cfe2;
+   
+    padding-top: 78px;
+}
+
+.projects .mainText h1{
+    margin: 0;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.projects .container .images .text{
+    color: blue;
+}
+
+.projects .container{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    
+    
+}
+.projects .container .images{
+    min-width: 250px;
+    padding: 5%;
+}
+
+.projects .container .images img{
+    width: 100%;
+    border-radius: 5%;
+    
+}
+
+.projects .container .images a .text:hover{
+    opacity: 0.8;
+    color: rgb(79, 79, 175);
+    font-size: 24px;
+}
+
+.projects .container .images a{
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 700px){
+
+    .projects .container{
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr ;
+            grid-template-columns: 1fr ;
+        -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 10px;
+
+    }
+
+
+    .projects .container .images{
+        width: 70%;
+        margin: auto;
+        padding: 3%;
+    }
+
+    .projects .container .images img{
+        display: flex;
+        justify-content: center;
+        border-radius: 5%;
+        
+    }
+}
