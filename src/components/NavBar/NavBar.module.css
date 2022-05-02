@@ -1,7 +1,9 @@
 *{
     overflow-x: hidden;
 }
-
+.navBar_hamburger_icon{
+    display: none;
+}
 .navBar{
     background-image: url("/src/img/header.jpg");
     height: 80px;
@@ -37,11 +39,62 @@
     color: rgb(36, 65, 129);
 }
 
-@media only screen and (max-width: 600px){
-    .navBar nav ul li{
-        font-size: 20px;
-    }
+@media only screen and (max-width: 500px){
+    
     .navBar {
         width: 100%;
+        display: flex;
+        justify-content: flex-start;
     }
+ 
+    .navBar_hamburger_icon{
+        position: relative;
+        display: flex;
+        height: 2em;
+        padding: 1em;
+        margin-left: 2em;
+    }
+    .dropdown_icon {
+        cursor: pointer;
+        display: inline-block;
+
+      }
+      
+      .dropdown_content {
+        border-radius: 0 0 10px 10px;
+        background-color: rgb(218, 217, 223);
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        z-index: 1;
+        
+        
+      }
+      
+    .dropdown_icon:hover .dropdown_content {
+    display: block;
+    
+    
+    }
+  
+    .navBar nav ul li a{
+        text-decoration: none;
+        color: rgb(35, 34, 51);
+        font-size: 1em;
+        display: block;
+        z-index: 1;
+        
+    }
+    .navBar nav ul li{
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        
+    }
+
+
+
+
+
+
 }

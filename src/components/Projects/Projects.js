@@ -1,5 +1,5 @@
 import React from "react";
-import Header from './../Header/Header'
+
 import Style from './Projects.module.css';
 import movie from './../../img/MovieList.jpg';
 import muscle from './../../img/MuscleCars.jpg';
@@ -7,13 +7,14 @@ import play from './../../img/PlayList.jpg';
 import dash from './../../img/StudentDashBoard.jpg';
 import todo from './../../img/TodoList.jpg'
 import api from './../../img/Api.jpg'
+import SuperPy from './../../img/SuperPy.png'
 
 
 const Projects = () => {
     return (
         <div className={Style.projects} id="projects">
             <div className={Style.mainText}>
-                <Header title={'These are some of the projects ive done'} />
+                <h1>These are some of the projects ive done</h1>
                 <div>
                     <h2>Front-End projects</h2>
                 </div>
@@ -53,6 +54,18 @@ const Projects = () => {
                     <img className={Style.myApi} src={api} alt="GOF Api"></img>
                     <a href='https://gifted-swanson-6454ad.netlify.app'>
                         <h2 className={Style.text}>Fetching async data from an API</h2>
+                    </a>
+                </div>
+                <div className={Style.back_end_sorry_text}>
+                    <h2>At the moment I am still completing my Back-end course, so i still havent had that many Back-end projects</h2>
+                </div>
+                <div className={Style.images}>
+                    <div>
+                        <h2>Back-End projects</h2>
+                    </div>
+                    <img className={Style.movieList} src={SuperPy} alt="SuperPy - Python App"></img>
+                    <a href='https://github.com/SamLinoFinnegan/Back-end.git'>
+                        <h2 className={Style.text}>SuperPy - Supermarket administration CLI app, with optional GUI</h2>
                     </a>
                 </div>
             </div>

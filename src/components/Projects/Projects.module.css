@@ -1,7 +1,12 @@
 *{
     overflow-x: hidden;
 }
-
+.projects .mainText h1{
+    text-align: center;
+    padding: 1em;
+    margin-bottom: 10%;
+    font-size: 1.7em;
+}
 .projects{
     margin: 0;
     padding: 0;
@@ -59,6 +64,19 @@
 .projects .container .images a{
     text-decoration: none;
 }
+.back_end_sorry_text{
+    text-align: center;
+    align-self: center;
+    margin: 5%;
+    width: 350px;
+    background-color: rgb(163, 166, 172);
+    border: 2px solid black;
+}
+.back_end_sorry_text h2{
+    color: rgb(47, 48, 49);
+}
+
+
 
 @media only screen and (max-width: 700px){
 
@@ -72,7 +90,9 @@
         gap: 10px;
 
     }
-
+    .projects .mainText h1{
+        font-size: 1.4em;
+    }
 
     .projects .container .images{
         width: 70%;
@@ -86,4 +106,23 @@
         border-radius: 5%;
         
     }
+
+    .back_end_sorry_text{
+        text-align: center;
+        align-self: center;
+        margin: auto;
+        max-width: 250px;
+        background-color: rgb(163, 166, 172);
+        border: 2px solid black;
+    }
+    .back_end_sorry_text h2{
+        color: rgb(47, 48, 49);
+        font-size: 1em;
+    }
+    
+
+
+
+
+
 }

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Style from './Skills.module.css'
-import Header from './../Header/Header'
+
 import compSkills from './../../img/computerSkills.jpg'
 import { FaGithub } from "react-icons/fa";
 import { SiJest } from "react-icons/si"
@@ -115,10 +115,11 @@ const Skills = () => {
 
     return (
         <div className={Style.skills} id="skills">
+            <div className={Style.mainText}>
+                <h1>What about the skills?</h1>
+            </div>
             <div className={Style.mainText_container}>
-                <div className={Style.mainText}>
-                    <Header title={'What about the skills?'} />
-                </div>
+
                 <p>Im a life long learner and enjoy learning new stuf!
                     Below are some programming languages, toolkits,
                     frameworks and libraries that i've worked with and like.
