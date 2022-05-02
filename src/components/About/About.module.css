@@ -1,3 +1,7 @@
+*{
+    overflow-x: hidden;
+}
+
 .about{
     background-image: url('/src/img/mother_boeard_background.jpg');
     padding-bottom: 5%;

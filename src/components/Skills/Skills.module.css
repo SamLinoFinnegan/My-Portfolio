@@ -1,3 +1,7 @@
+*{
+    overflow-x: hidden;
+}
+
 .skills{
     background-image: url('/src/img/mother_boeard_background.jpg');
     background-size: cover;
