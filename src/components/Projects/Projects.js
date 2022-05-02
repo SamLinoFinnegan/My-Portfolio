@@ -14,6 +14,9 @@ const Projects = () => {
         <div className={Style.projects} id="projects">
             <div className={Style.mainText}>
                 <Header title={'These are some of the projects ive done'} />
+                <div>
+                    <h2>Front-End projects</h2>
+                </div>
             </div>
             <div className={Style.container}>
                 <div className={Style.images}>
@@ -37,13 +40,13 @@ const Projects = () => {
                 <div className={Style.images}>
                     <img className={Style.dashBoard} src={dash} alt="Student DashBoard"></img>
                     <a href='https://competent-kowalevski-f9e3cb.netlify.app'>
-                        <h2 className={Style.text}>UI/UX</h2>
+                        <h2 className={Style.text}>One page aplication Dashboard</h2>
                     </a>
                 </div>
                 <div className={Style.images}>
                     <img className={Style.todoList} src={todo} alt="Todo List"></img>
                     <a href='https://happy-villani-0e3ea1.netlify.app'>
-                        <h2 className={Style.text}>Vanila JavaScript Todo list doing http requests</h2>
+                        <h2 className={Style.text}>JavaScript TODO list doing HTTP requests to local server</h2>
                     </a>
                 </div>
                 <div className={Style.images}>

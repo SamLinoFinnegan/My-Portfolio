@@ -1,10 +1,12 @@
 .footer {
     width: 100%;
     margin: auto;
-    background-color: rgb(31, 54, 102)
+    background-image: url("/src/img/footer.jpg");
+    opacity: 0.9;
   }
   
   .footer .footerContainer {
+    
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -16,29 +18,33 @@
   }
   
   .footer .footerContainer p {
+    font-size: 1em;
     color: white;
     
   }
   
   .footer .footerContainer a {
-    padding: 10px;
+    padding: 0.6em;
     width: 33.3vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
     text-decoration: none;
-    font-size: 20px;
-    border: 2px solid black;
-    box-shadow: 0 0 3px 2px white;
+    font-size: 1em;
+    border-top:1px solid rgb(163, 189, 245);
+    border-right:2.5px double rgba(29, 27, 49, 0.671);
+    border-left:2.5px double rgba(29, 27, 49, 0.671);
+    border-bottom:2.5px double rgba(29, 27, 49, 0.671);
+    box-shadow:   inset 0 20px 10px -15px rgb(163, 189, 245);
     border-radius: 2%;
   }
   
   .footer .footerContainer a .footerIcon {
     color: white;
     float: left;
-    margin-right: 20px;
-    padding: 10px;
+    margin-right: 1.5em;
+    padding: 0.8em;
     align-self: center;
   }
    
@@ -54,17 +60,19 @@
   }
   
   .footer .naw {
+    font-size: 1em;
     width: 100%;
     text-align: center;
-    padding: 20px;
+    padding: 0.4em;
     color: white;
     margin: 0;
   }
   
   .footer .naw .footerIcon {
+    
     vertical-align: middle;
-    margin-left: 5px;
-    margin-right: 4px;
+    margin-left: 4px;
+    margin-right: 3px;
     color: #f8ffdb;
   }
   
@@ -92,9 +100,12 @@
       justify-content: center;
       flex-wrap: wrap;
       text-decoration: none;
-      font-size: 15px;
-      border: 2px solid black;
-      box-shadow: 0 0 3px 2px white;
+      font-size: 0.8em;
+      border-top:1px solid white;
+      border-right:1px solid rgb(12, 9, 53);
+      border-left:1px solid rgb(12, 9, 53);
+      border-bottom:1px solid rgb(12, 9, 53);
+      box-shadow:   inset 0 20px 10px -15px white;
       border-radius: 2%;
     }
     .footer .footerContainer a .footerIcon {

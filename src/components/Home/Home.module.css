@@ -1,34 +1,84 @@
+h2, h1, a, p{
+    margin: 0;
+}
+
+
 .home{
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 58%, rgba(0,212,255,1) 100%);
-    display: flex;
-    height: 630px;
-    padding: 80px;
-    position: relative;
+    background-image: url('/src/img/digital_world.jpg');
+    background-size: cover;
    
 }
-.home .container {   
-    position: absolute;
-    top: 15%;
-    left: 2%;
-    color: white;
+
+
+.home .hello_world {
+    text-align: center;
+    padding: 5%;
+    animation: fadeIn linear 0.8s;   
+    
+}
+.home .content_container{
+    display: flex;
+    justify-content: space-between;
+    padding: 3%;
+    padding-right: 5%;
     
 }
 
-.home .container {
-    animation: fadeIn linear 2s;   
+
+
+.home .intro_card{
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    text-align: center;
+    background-color:#1b2c46;
+    padding: 1em;
+    border: 3px solid rgb(11, 13, 36);
+    border-radius: 10px;
+    opacity: 0.8;
+    animation: fadeIn linear 0.8s; 
     
 }
+
+.home .intro_card .intro_card_text{
+    padding: 0.8%;
+}
+.home .intro_card .intro_card_img img{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 1em;
+    border: #17202eea 2px double;
+    border-radius: 10px;
+}
+
+
+.robot_img{
+    position: relative;
+    left:15%;
+    opacity: 0.8;
+    padding: 0.5em;
+    animation: comeIn 1s linear;
+}
+.robot_img img{
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
 
 @keyframes fadeIn {
     0% {opacity:0;}
     100% {opacity:1;}
     
   }
+@keyframes comeIn {
+    0% {opacity:0; left:-20px;}
 
-.home .container .hello{
-    font-size: 63px;
+    100% {opacity:0.8; right:0px;}
 }
+
+
 
 .home .container h1{
     margin: 0;
@@ -36,11 +86,11 @@
 }
 .home .code{
     position: absolute;
-    opacity: 0.7;
-    height: 43%;
+    opacity: 0.8;
+    height: 35%;
     bottom: 55%;
-    top: 45%;
-    left: 3%;
+    top: 30%;
+    left: 1%;
     
 }
 .home .code img{

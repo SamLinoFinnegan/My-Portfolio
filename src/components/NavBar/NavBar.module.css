@@ -1,13 +1,14 @@
 .navBar{
-    background-color: rgb(64, 104, 189);
+    background-image: url("/src/img/header.jpg");
     height: 80px;
     width: 100%;
-    position: fixed;
     z-index: 999;
     opacity: 0.9;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: 2.5px solid #0f1724 ;
+    box-shadow: 3px 3px 8px #9eb1da;
 }
 
 .navBar nav ul{

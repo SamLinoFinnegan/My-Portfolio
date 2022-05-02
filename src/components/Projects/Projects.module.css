@@ -1,21 +1,26 @@
 .projects{
     margin: 0;
     padding: 0;
-    background-color: #c3cfe2;
-   
-    padding-top: 78px;
+    background-image: url('/src/img/mother_boeard_background.jpg');
+    background-size: cover;
+    padding-top: 4em;
 }
 
-.projects .mainText h1{
+.projects .mainText h1,h2{
     margin: 0;
-    padding: 5%;
+    padding: 3%;
     display: flex;
     justify-content: center;
+    
+}
+.projects .mainText h2{
+    font-size: 1.2em;
 }
 
-
 .projects .container .images .text{
-    color: blue;
+    color: rgb(244, 244, 252);
+    font-size: 1em;
+    text-align: center;
 }
 
 .projects .container{
@@ -37,13 +42,14 @@
 .projects .container .images img{
     width: 100%;
     border-radius: 5%;
+    border: 5px solid rgb(62, 66, 94);
     
 }
 
 .projects .container .images a .text:hover{
     opacity: 0.8;
-    color: rgb(79, 79, 175);
-    font-size: 24px;
+    color: rgb(115, 115, 192);
+    
 }
 
 .projects .container .images a{

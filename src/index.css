@@ -24,19 +24,19 @@ html, body {
   
 }
 h1{
-  font-weight: 900;
+  font-weight: 800;
   font-size: 45px;
   color: rgb(226, 231, 250);
 }
 h2{
-  font-weight: 700;
-  font-size: 23px;
+  font-weight: 500;
+  font-size: 1em;
   color: rgb(226, 231, 250);
 
 }
 p{
-  font-weight: 500;
-  font-size: 21px;
+  font-weight: 400;
+  font-size: 1.5em;
   color: rgb(226, 231, 250);
 
 }
