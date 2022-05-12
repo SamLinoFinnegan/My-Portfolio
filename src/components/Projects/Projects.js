@@ -1,5 +1,5 @@
 import React from "react";
-
+import Project from "./../Project/Project";
 import Style from './Projects.module.css';
 import movie from './../../img/MovieList.jpg';
 import muscle from './../../img/MuscleCars.jpg';
@@ -11,6 +11,57 @@ import SuperPy from './../../img/SuperPy.png'
 
 
 const Projects = () => {
+    
+
+
+    
+    const imbd_obj = {
+        img: movie,
+        alt: "IMBD",
+        href: 'https://angry-wing-f800c4.netlify.app',
+        text: "IMDB made with Vanila JavaScript"
+
+    }
+    const muscle_obj = {
+        img: muscle,
+        alt:"Muscle cars",
+        href: 'https://friendly-banach-520c42.netlify.app',
+        text: "This was my first Website using just HTML and css"
+    }
+    const play_obj = {
+        img: play,
+        alt:"Play List",
+        href: 'https://hopeful-swirles-5b4d2f.netlify.app',
+        text: "React playlist UI using Redux"
+    }
+    
+    
+    const dashboard_obj = {
+        img: dash,
+        alt: "Student DashBoard",
+        href: 'https://competent-kowalevski-f9e3cb.netlify.app',
+        text: "One page aplication Dashboard, with student database"
+    }
+    
+    const todo_obj = {
+        img: todo,
+        alt: "Todo List", 
+        href: 'https://happy-villani-0e3ea1.netlify.app',
+        text: "JavaScript TODO list doing HTTP requests to local server"
+    }
+    const api_obj = {
+        img: api,
+        alt:"GOF Api",
+        href: 'https://gifted-swanson-6454ad.netlify.app',
+        text: "Fetching async data from an APIt"
+    }
+    
+    const projects_obj = [imbd_obj,muscle_obj,play_obj,dashboard_obj,todo_obj,api_obj]
+    let something = projects_obj.map(item => {
+        return <Project img={item.img} alt={item.alt} href={item.href} text={item.text} />
+    })
+
+
     return (
         <div className={Style.projects} id="projects">
             <div className={Style.mainText}>
@@ -20,42 +71,8 @@ const Projects = () => {
                 </div>
             </div>
             <div className={Style.container}>
-                <div className={Style.images}>
-                    <img className={Style.movieList} src={movie} alt="IMBD"></img>
-                    <a href='https://angry-wing-f800c4.netlify.app'>
-                        <h2 className={Style.text}>IMDB made with Vanila JavaScript</h2>
-                    </a>
-                </div>
-                <div className={Style.images}>
-                    <img className={Style.muscleCars} src={muscle} alt="Muscle car"></img>
-                    <a href='https://friendly-banach-520c42.netlify.app'>
-                        <h2 className={Style.text}>This was my first Website using just HTML and css</h2>
-                    </a>
-                </div>
-                <div className={Style.images}>
-                    <img className={Style.playList} src={play} alt="Play List"></img>
-                    <a href='https://hopeful-swirles-5b4d2f.netlify.app'>
-                        <h2 className={Style.text}>React playlist UI using Redux</h2>
-                    </a>
-                </div>
-                <div className={Style.images}>
-                    <img className={Style.dashBoard} src={dash} alt="Student DashBoard"></img>
-                    <a href='https://competent-kowalevski-f9e3cb.netlify.app'>
-                        <h2 className={Style.text}>One page aplication Dashboard</h2>
-                    </a>
-                </div>
-                <div className={Style.images}>
-                    <img className={Style.todoList} src={todo} alt="Todo List"></img>
-                    <a href='https://happy-villani-0e3ea1.netlify.app'>
-                        <h2 className={Style.text}>JavaScript TODO list doing HTTP requests to local server</h2>
-                    </a>
-                </div>
-                <div className={Style.images}>
-                    <img className={Style.myApi} src={api} alt="GOF Api"></img>
-                    <a href='https://gifted-swanson-6454ad.netlify.app'>
-                        <h2 className={Style.text}>Fetching async data from an API</h2>
-                    </a>
-                </div>
+                {something}
+                
                 <div className={Style.back_end_sorry_text}>
                     <h2>At the moment I am still completing my Back-end course, so i still havent had that many Back-end projects</h2>
                 </div>

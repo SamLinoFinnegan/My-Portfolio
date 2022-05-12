@@ -5,9 +5,12 @@
     text-align: center;
     padding: 1em;
     margin-bottom: 10%;
-    font-size: 1.3em;
+    
 }
+.about .mainText h1{
+    font-size: 1.7em;
 
+}
 .about{
     background-image: url('/src/img/mother_boeard_background.jpg');
     padding-bottom: 5%;

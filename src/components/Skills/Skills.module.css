@@ -6,7 +6,7 @@
     text-align: center;
     padding: 1em;
     margin-bottom: 10%;
-    font-size: 1.3em;
+    font-size: 1.7em;
 }
 
 
@@ -64,6 +64,7 @@
 }
 
 .skills .container .list_container{
+    min-height: 410px;
     padding: 4%;
 }
 
