@@ -15,6 +15,7 @@
     align-items: center;
     border-bottom: 2.5px solid #0f1724 ;
     box-shadow: 3px 3px 8px #9eb1da;
+    
 }
 
 .navBar nav ul{
@@ -50,45 +51,59 @@
     .navBar_hamburger_icon{
         position: relative;
         display: flex;
-        height: 2em;
+        height: 3em;
         padding: 1em;
         margin-left: 2em;
+        
     }
-    .dropdown_icon {
+    .navBar_hamburger_icon img{
+        box-shadow: 0 0 7px 1.5px rgb(130, 127, 151);
+        border: solid 1px rgb(55, 57, 68);
+        border-radius: 10px;
+        
+        
+    }
+    .dropdown_icon img{
         cursor: pointer;
         display: inline-block;
+        
 
       }
       
       .dropdown_content {
         border-radius: 0 0 10px 10px;
+        border: black 1px solid;
         background-color: rgb(218, 217, 223);
+        opacity: 1;
         display: none;
         position: absolute;
         min-width: 160px;
-        z-index: 1;
+        z-index: 1000;
         
         
       }
       
     .dropdown_icon:hover .dropdown_content {
-    display: block;
+        display: block;
+        
     
     
     }
+
+    
   
     .navBar nav ul li a{
         text-decoration: none;
         color: rgb(35, 34, 51);
         font-size: 1em;
         display: block;
-        z-index: 1;
+        z-index: 10;
         
     }
     .navBar nav ul li{
         display: flex;
         flex-direction: column;
-        z-index: 1;
+        z-index: 1000;
         
     }
 
