@@ -25,10 +25,7 @@ const About = () => {
                         My life has taken me down many roads and allowed me to meet some amazing people who have helped mold me to the person I am today. I truly believe that self improvement of oneself and the world around us is why we are here. To be better today than yesterday, to do better.
                         <br />
                         I always try to be proactive, I believe that time is one of life's most precious gifts so I really don't like just doing nothing.
-                        <br />
-
-
-                        So welcome to my Web page, where learning, teaching and collaboration is not only what I do, but how I live.
+                      
                     </p>
                 </div>
                 <div className={Style.img} >

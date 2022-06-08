@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Style from './Skills.module.css'
-
 import compSkills from './../../img/computerSkills.jpg'
 import { FaGithub } from "react-icons/fa";
 import { SiJest } from "react-icons/si"
@@ -11,7 +10,6 @@ import { FaSass } from "react-icons/fa"
 import { SiJavascript } from "react-icons/si"
 import { FaReact } from "react-icons/fa"
 import { SiRedux } from "react-icons/si"
-
 import { SiPython } from "react-icons/si"
 import { SiFlask } from "react-icons/si"
 import { GrMysql } from "react-icons/gr"
@@ -24,8 +22,11 @@ const Skills = () => {
     const titleStyle = { fontWeight: 900, color: ' rgba(0, 212, 255, 1)', marginBottom: '8px' }
 
     let [skill, upDateSkill] = useState()
+    const [toggle, setToggle] = useState(false);
 
-
+    const triggerToggle = () => {
+        setToggle( !toggle )
+    }
 
     const backend =
         <div className={Style.list}>
@@ -112,7 +113,22 @@ const Skills = () => {
             upDateSkill(other)
         }
     }
+    let languages = ""
+    if(toggle){
+        languages = 
+        <div className={Style.language_container}>
+            <ul className={Style.language}>
+                <li><p>English</p></li>
+                <li><p>Portuguese</p></li>
+                <li><p>Spanish</p></li>
+                <li><p>Dutch</p></li>
+            </ul>
 
+        </div>
+
+    }else{
+        languages = ""
+    }
     return (
         <div className={Style.skills} id="skills">
             <div className={Style.mainText}>
@@ -143,7 +159,25 @@ const Skills = () => {
                     {skill}
                 </div>
             </div>
+            <div className={Style.mainText}>
+                <h1>How about human languages</h1>
+            </div>
+            <div className={Style.ToggleSwitch_container}>
+                
+                <div onClick={triggerToggle} className={Style.ToggleSwitch}>
+                    <div className={toggle ? Style.knob_active : Style.knob} />
+                
+                </div>
+                <div>
+                    {languages}
+                </div>
+            </div>
         </div>
+        
+        
+            
+           
+        
     );
 }
 

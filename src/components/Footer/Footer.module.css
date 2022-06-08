@@ -17,7 +17,10 @@
             
   }
   
-  .footer .footerContainer p {
+  .footer .footerContainer a p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 1em;
     color: white;
     

@@ -1,35 +1,47 @@
 *{
     overflow-x: hidden;
 }
+.social_media_icons ul li .Icon{
+
+    max-width: 0.6em;
+    
+}
+.nav_container .dropdown_icon{
+    display: flex;
+    justify-content: center;
+    
+}
+
 .navBar_hamburger_icon{
     display: none;
 }
 .navBar{
     background-image: url("/src/img/header.jpg");
-    height: 80px;
+    height: 75px;
     width: 100%;
     z-index: 999;
     opacity: 0.9;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     border-bottom: 2.5px solid #0f1724 ;
     box-shadow: 3px 3px 8px #9eb1da;
     
 }
 
-.navBar nav ul{
+.navBar ul{
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.navBar nav ul li{
+.navBar ul li{
     display: inline-block;
-    margin: 20px;
+    margin: 15px;
 }
 
-.navBar nav ul li a{
+
+.navBar ul li a{
     text-decoration: none;
     color: white;
     font-size: 23px;
@@ -39,20 +51,29 @@
     
     color: rgb(36, 65, 129);
 }
+.dropdown_content{
+    border: #17181a solid 2px;
+    border-radius: 10px;
+    background-color: #293147;
+    margin-left: 10px;
+    padding-left:10px;
+    padding-right: 10px;
+    
+}
 
 @media only screen and (max-width: 500px){
     
     .navBar {
+        
         width: 100%;
         display: flex;
         justify-content: flex-start;
     }
  
     .navBar_hamburger_icon{
-        position: relative;
         display: flex;
         height: 3em;
-        padding: 1em;
+        padding: 0.8em;
         margin-left: 2em;
         
     }
@@ -77,36 +98,42 @@
         opacity: 1;
         display: none;
         position: absolute;
+        top: 75px;
+        left: 10px;
         min-width: 160px;
         z-index: 1000;
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
         
         
       }
       
     .dropdown_icon:hover .dropdown_content {
         display: block;
-        
-    
     
     }
 
-    
+
   
-    .navBar nav ul li a{
+    .navBar ul li a{
         text-decoration: none;
         color: rgb(35, 34, 51);
         font-size: 1em;
-        display: block;
+        
         z-index: 10;
         
     }
-    .navBar nav ul li{
+    .navBar ul li{
         display: flex;
         flex-direction: column;
         z-index: 1000;
         
     }
+    .social_media_icons ul li .Icon{
+        display: none;
 
+    }
 
 
 

@@ -10,8 +10,9 @@
 .projects{
     margin: 0;
     padding: 0;
-    background-image: url('/src/img/mother_boeard_background.jpg');
+    background-image: url('/src/img/mother_board.png');
     background-size: cover;
+    background-color: black;
     padding-top: 4em;
 }
 

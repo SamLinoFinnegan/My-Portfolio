@@ -53,11 +53,11 @@ const Projects = () => {
         img: api,
         alt:"GOF Api",
         href: 'https://gifted-swanson-6454ad.netlify.app',
-        text: "Fetching async data from an APIt"
+        text: "Fetching async data from an API"
     }
     
     const projects_obj = [imbd_obj,muscle_obj,play_obj,dashboard_obj,todo_obj,api_obj]
-    let something = projects_obj.map(item => {
+    let the_projects = projects_obj.map(item => {
         return <Project img={item.img} alt={item.alt} href={item.href} text={item.text} />
     })
 
@@ -71,7 +71,7 @@ const Projects = () => {
                 </div>
             </div>
             <div className={Style.container}>
-                {something}
+                {the_projects}
                 
                 <div className={Style.back_end_sorry_text}>
                     <h2>At the moment I am still completing my Back-end course, so i still havent had that many Back-end projects</h2>

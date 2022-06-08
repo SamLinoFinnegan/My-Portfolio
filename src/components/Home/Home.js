@@ -12,8 +12,8 @@ const Home = () => {
             <div className={Style.container}>
                 <div className={Style.hello_world_container}>
                     <div className={Style.hello_world}>
-                        <h1>"Hello World"</h1>
-                        <h2>Welcome to my Portfolio</h2>
+                        <h2>"Hello World"</h2>
+                        <h1>Welcome to my Portfolio</h1>
                     </div>
                 </div>
                 <div className={Style.content_container}>
@@ -28,7 +28,7 @@ const Home = () => {
                                 <p>With passion for learning and developing AI / ML</p>
                             </div>
                             <div className={Style.intro_card_img}>
-                                <img src={lenguages} alt="python ML / AI"></img>
+                                <img src={lenguages} alt="Python ML / AI"></img>
                             </div>
                         </div>
                     </div>

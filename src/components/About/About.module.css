@@ -1,20 +1,20 @@
 *{
     overflow-x: hidden;
 }
-.about .mainText{
+.about .mainText h1{
     text-align: center;
     padding: 1em;
     margin-bottom: 10%;
+    font-size: 1.7em;
     
 }
-.about .mainText h1{
-    font-size: 1.7em;
 
-}
 .about{
-    background-image: url('/src/img/mother_boeard_background.jpg');
+    background-image: url('/src/img/mother_board.png');
+    background-size: cover;
     padding-bottom: 5%;
     padding-top: 78px;
+    background-color: black;
     
 }
 

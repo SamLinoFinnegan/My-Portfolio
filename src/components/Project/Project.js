@@ -8,10 +8,11 @@ import Style from './Project.module.css';
 const Project = (props) =>{
     return (
         <div className={Style.images}>
-            <img className={Style.movieList} src={props.img} alt={props.alt}></img>
             <a href={props.href}>
-                <h2 className={Style.text}>{props.text}</h2>
+                <img className={Style.movieList} src={props.img} alt={props.alt}></img>
             </a>
+                <h2 className={Style.text}>{props.text}</h2>
+            
         </div>
     )
 }
