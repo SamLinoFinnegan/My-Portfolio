@@ -81,7 +81,7 @@ const Projects = () => {
                         <h2>Back-End projects</h2>
                     </div>
                     <img className={Style.movieList} src={SuperPy} alt="SuperPy - Python App"></img>
-                    <a href='https://github.com/SamLinoFinnegan/Back-end.git'>
+                    <a href='https://github.com/SamLinoFinnegan/SuperPy-.git'>
                         <h2 className={Style.text}>SuperPy - Supermarket administration CLI app, with optional GUI</h2>
                     </a>
                 </div>
